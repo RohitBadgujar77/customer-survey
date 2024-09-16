@@ -152,8 +152,8 @@ const SurveyCards = () => {
             setQueNo(queNo - 1);
           }}
           disabled={queNo == 0 ? true : false}
-          className="nav-btn"
-        >
+          className={`nav-btn ${queNo == 0 ? "disable" : ""}`}
+        > 
           <IoMdArrowDropleftCircle /> Prev
         </button>
         <span>{queNo + 1}/6</span> {/*Showing current page of questions*/}
